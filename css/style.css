@@ -1,0 +1,80 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css");
+
+@import url("http://fonts.googleapis.com/earlyaccess/notosansjp.css");
+
+* {
+	font-family: 'Noto Sans JP';
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
+}
+
+header {
+	padding: 10px 0 10px 0;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	text-shadow: 1px 1px 5px #a7a7a7;
+}
+
+.wallpapers {
+	background-image: url(/img/promo_image_2.webp);
+	color: white;
+}
+
+.btn {
+	box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.45);
+}
+
+.social-icon {
+	display: block;
+	height: 3rem;
+	width: 3rem;
+	line-height: 2.4rem;
+	font-size: 1.5rem;
+	transition: filter .15s ease-in-out;
+}
+
+.social-icon:hover {
+	filter: brightness(0.8);
+}
+
+/* custom scrollbar */
+/*あとは直しといてクレメンスBy pi-mannnokanzumee*/
+::-webkit-scrollbar{
+   width: 5px;
+}
+::-webkit-scrollbar-track{
+   background-color: #2b3035;
+}
+::-webkit-scrollbar-thumb{
+   background: #cd9fff;
+
+   border-radius: 5px;
+}
+
+.btn-tertiary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #6200ff;
+    --bs-btn-border-color: #6200ff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #6200ff;
+    --bs-btn-hover-border-color: #6e14ff;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #6e14ff;
+    --bs-btn-active-border-color: #6200ff;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6200ff;
+    --bs-btn-disabled-border-color: #6200ff;
+}
